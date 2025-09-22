@@ -10,13 +10,7 @@ const sections = [
   {
     title: "Nos Valeurs",
     content:
-      [
-        "Compassion : Agir avec empathie et bienveillance envers chaque enfant. ", <br key="c1" />,<br key="c2" />,
-        "Intégrité : Conduire toutes nos actions avec honnêteté, transparence et ehtnique.", <br key="c3" />, <br key="c4" />,
-        "Responsabilité : Gérer les ressources de manière  efficace et redevable envers les bénéficiaires et donateurs.", <br key="c5" />, <br key="c6" />,
-        "Dignité : Respecter la dignité et les droits de chaque enfant et de sa famille.", <br key="c7" />, <br key="c8" />,
-        "Excellence : Rechercher l'amélioration contenue dans toutes nos interventions.",
-      ]
+      ["Compassion : Agir avec empathie et bienveillance envers chaque enfant. ", <br /> ,<br />, "Intégrité : Conduire toutes nos actions avec honnêteté, transparence et ehtnique.", <br />, <br />, "Responsabilité : Gérer les ressources de manière  efficace et redevable envers les bénéficiaires et donateurs.", <br />, <br />, "Dignité : Respecter la dignité et les droits de chaque enfant et de sa famille.", <br />, <br />, "Excellence : Rechercher l'amélioration contenue dans toutes nos interventions.",]
   },
   {
     title: "Nos engagements",
@@ -43,10 +37,10 @@ export default function APropos() {
          <h1 className="text-4xl  font-bold mb-6 ">À propos</h1>
 
         <p className="text-lg font-light tracking-wider leading-5 mb-6 ">
-            L&apos;Association Soutien aux Orphelins (ASO) est une organisation à but non lucratif, apolitique et laïque. <br /> Elle  apporte soutien inconstesté aux orphelins 
-            dans différents domaines sociaux sans distinction de région, de religion ou d&apos;ethnie. <br />
-            En tant qu&apos;association d&apos;aide humanitaire et caritative, nous aidons ces enfants vulnérables à surmonter la pauvreté, l&apos;injustice, l&apos;exclusion sociale et donnons ainsi une chance aux orphelins d&apos;avoir droit 
-            à l&apos;éducation et de bénéficier des soins sanitaires de base.
+            L'Association Soutien aux Orphelins (ASO) est une organisation à but non lucratif, apolitique et laïque. <br /> Elle  apporte soutien inconstesté aux orphelins 
+            dans différents domaines sociaux sans distinction de région, de religion ou d'ethnie. <br />
+            En tant qu'association d'aide humanitaire et caritative, nous aidons ces enfants vulnérables à surmonter la pauvreté, l'injustice, l'exclusion sociale et donnons ainsi une chance aux orphelins d'avoir droit 
+            à l'éducation et de bénéficier des soins sanitaires de base.
         </p>
        </div>
 
@@ -60,18 +54,10 @@ export default function APropos() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`$
+            className={`${
               index < sections.length - 1 ? "border-b" : ""
             }`} // ligne horizontale sauf le dernier
           >
-            <h2 className="text-xl font-semibold mb-2">{section.title}</h2>
-            {Array.isArray(section.content) ? (
-              section.content.map((item, idx) =>
-                typeof item === "string" ? <span key={idx}>{item}</span> : item
-              )
-            ) : (
-              <span>{section.content}</span>
-            )}
             <button
               onClick={() => toggleSection(index)}
               className="w-full flex items-center gap-3 p-4 text-left font-medium text-lg hover:bg-gray-100"
