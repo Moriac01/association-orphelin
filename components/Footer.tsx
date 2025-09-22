@@ -2,8 +2,7 @@
 import Link from "next/link";
 import {FaFacebook, FaWhatsapp, FaInstagram} from "react-icons/fa"
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { color, hover } from "framer-motion";
+
 import { Button } from "./ui/button";
 
 
