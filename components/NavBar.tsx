@@ -12,16 +12,16 @@ const NavBar = () => {
 
   const links = [
     { name: "accueil", href: "/" },
-    { name: "à propos", href: "/about" },
     { name: "nos actions", href: "/actions" },
     { name: "actualités", href: "/blog" },
-    { name: "devenir bénévole", href: "/volunteer" },
+    { name: "devenir membre", href: "/volunteer" },
+    { name: "à propos", href: "/about" },
     { name: "contact", href: "/contact" },
   ];
 
   return (
     <header className="w-full sticky top-0 z-50 ">
-      <div className=" flex items-center justify-between p-4 lg:px-15 px-8 bg-white shadow-md">
+      <div className=" flex items-center justify-between p-4 lg:px-15 px-4 bg-white shadow-md">
         {/* Logo */}
         <Link href="/">
           <div className="flex flex-col  justify-center">
@@ -36,7 +36,7 @@ const NavBar = () => {
               <p className="text-5xl font-bold text-sky-400/100 ">ASO</p>
             </h1>
             <span className="text-xs font-semibold text-sky-400/100">
-              Association Soutien Orphelins
+              Association Soutien aux. Orphelins
             </span>
           </div>
         </Link>
@@ -56,7 +56,7 @@ const NavBar = () => {
             ))}
         </nav>
         <Link href="/donate">
-          <span className="hidden capitalize lg:flex text-lg font-medium text-gray-700 hover:text-sky-500">
+          <span className="hidden capitalize lg:flex text-lg bg-yellow-300 rounded-full py-2 px-4  border font-medium text-gray-700 hover:text-black hover:bg-yellow-500">
             faire un don
           </span>
         </Link>
