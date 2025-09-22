@@ -31,8 +31,8 @@ export default function Hero() {
             viewport={{ once: true }}
             className="leading-5 tracking-wide text-base lg:text-lg lg:tracking-wider lg:leading-none text-gray-700 mb-6"
           >
-            Grâce à votre soutien, nous agissons pour l'éducation, la santé et
-            l'épanouissement des enfants.
+            Grâce à votre soutien, nous agissons pour l&apos;éducation, la santé et
+            l&apos;épanouissement des enfants.
           </motion.p>
           <div className="flex gap-3 lg:justify-start justify-center">
             <motion.div

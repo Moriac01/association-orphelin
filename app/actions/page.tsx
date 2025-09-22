@@ -18,7 +18,7 @@ export default function ActionsPage() {
         <div className="lg:order-1 ">
           <h2 className="text-2xl mb-2">Éducation</h2>
           <p>
-            L'associatin Soutien aux Orphelins assure un suivi éducatif pour
+            L&apos;associatin Soutien aux Orphelins assure un suivi éducatif pour
             tous ces enfants vulnérables notament les orphelins pour garantir
             une réussite scolaire.
           </p>
@@ -48,7 +48,7 @@ export default function ActionsPage() {
         />
         <div className="lg:order-1">
           <h2 className="text-2xl mb-2">Nutrition</h2>
-        <p>L'association contribue également à améliorer l'état de nutrition chez ces enfants démunis.</p>
+  <p>L&apos;association contribue également à améliorer l&apos;état de nutrition chez ces enfants démunis.</p>
         </div>
       </div>
     </section>
